@@ -1,1 +1,21 @@
 // Navigation code here
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    text-align: center;
+
+    nav {
+        justify-content: space-between;
+        flex-basis: 2em;
+        margin-top: 2em;
+    }
+
+    a {
+        text-decoration: none;
+        color: @nav-font;
+        margin: 0 1.2em;
+    }
+}
