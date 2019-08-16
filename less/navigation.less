@@ -9,13 +9,12 @@
 
     nav {
         justify-content: space-between;
-        flex-basis: 2em;
-        margin-top: 2em;
-    }
+        #navVerticalSpacing();
 
-    a {
-        text-decoration: none;
-        color: @nav-font;
-        margin: 0 1.2em;
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            #anchorMargin();
+        }
     }
 }
