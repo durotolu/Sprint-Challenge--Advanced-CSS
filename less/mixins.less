@@ -8,3 +8,13 @@
 #anchorMargin() {
     margin: 0 1.2em;
 }
+
+.setPercent(@number: 100%) {
+    width: @number;
+}
+
+#makeFullSize() {
+    @media @phone {
+        .setPercent();
+      }
+}
