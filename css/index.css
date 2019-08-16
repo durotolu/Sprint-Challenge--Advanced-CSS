@@ -177,6 +177,10 @@ p {
   color: #454A59;
   margin: 0 1.2em;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
