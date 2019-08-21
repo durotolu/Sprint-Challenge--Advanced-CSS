@@ -1,1 +1,40 @@
 // Navigation code here
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.3;
+
+    nav {
+        justify-content: space-between;
+        #navVerticalSpacing();
+
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            #anchorMargin();
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.makeButton(@color: @button-background, @position: center, @font: 2rem, @text-color: white) {
+    background-color: @color;
+    color: @text-color;
+    text-align: @position;
+    line-height: 1.5;
+    font-size: @font;
+    border-radius: 8px;
+    width: 5em;
+    padding: 0.2em 0;
+}
